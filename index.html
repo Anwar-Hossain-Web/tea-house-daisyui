@@ -19,7 +19,9 @@
       theme: {
         extend: {
           colors: {
-            clifford: '#da373d',
+            'gradient-start': '#FF8938',
+            'gradient-end': '#F00',
+
           }
         }
       }
@@ -33,18 +35,20 @@
 </head>
 <body class="font-manrope">
     <header class="container mx-auto">
-        <div class="hero "> <!--was in this line "min-h-screen bg-base-200"-->
-            <div class="hero-content flex-col lg:flex-row"> <!--was in this line "lg:flex-row-reverse"-->
+        <div class="my-20 "> <!--was in this line "min-h-screen bg-base-200"-->
+            <div class="flex justify-between items-center flex-col lg:flex-row"> <!--was in this line "hero-content lg:flex-row-reverse"-->
                <!--was in this line "image/banner.png" go to under রিভার্স সরানো হল, ছবি নিচে নেওয়া হল  -->
               <div>
                 <h1 class="text-7xl sm:text-3xl font-extrabold">It's good <br> 
                     tea time at The <br> Tea House</h1>
                 <p class="py-6">Tea and Botanical Solutions Supplier Give Optimum Satisfaction To Your Taste Buds.</p>
-                <button class="btn btn-primary">Explore More</button>
+                <button class="btn text-white bg-gradient-to-r from-gradient-start to-gradient-end">Explore More
+                  <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                </button>
               </div>
               <div>
                 <!--ratings batch-->
-                <img src="/images/banner.png" class="max-w-sm" />
+                <img src="/images/banner.png" class="max-w-sm" /><!--was in this line "class="max-w-sm""-->
                     <div class=" -mt-16 flex items-center gap-4 drop-shadow-lg bg-white padding-5 w-60">
                       <i class="fa-solid fa-star text-3xl text-amber-400"></i>
                       <div>
@@ -120,7 +124,7 @@
 
        </section>
        <!--Super Client Section-->
-       <section class="my-24 flex flex-col lg:flex-row gap-12 rounded-xl bg-gradient-to-r from-[#FF8938] to-[#F00] px-16 py-24">
+       <section class="my-24 flex flex-col lg:flex-row gap-12 rounded-xl bg-gradient-to-r from-gradient-start to-gradient-end px-16 py-24">
         <div>
           
         </div>
@@ -168,9 +172,61 @@
 
        </section>
     </main>
-    <footer>
+    
+      <footer class="px-4 lg:px-48 py-10 bg-base-200 text-base-content">
+        <div class="flex justify-between my-24">
+          <img src="images/cup.png" alt="">
+          <p class="">
+            <span>Ready to get started?</span>
+            <button class="btn text-white bg-gradient-to-r from-gradient-start to-gradient-end ">Get Started</button>
+          </p>
+        </div>
 
-    </footer>
+        <div class="footer">
+          
+            <div>
+              <span class="footer-title">Quick Links</span> 
+              <a class="link link-hover">Home</a> 
+              <a class="link link-hover">About us</a> 
+              <a class="link link-hover">Insurance</a> 
+              <a class="link link-hover">Privacy Policy</a>
+            </div> 
+          
+          <div>
+            <span class="footer-title">Our Services</span> 
+            <a class="link link-hover">Life Insurance</a> 
+            <a class="link link-hover">Car Insurance</a> 
+            <a class="link link-hover">Health Insurance</a> 
+            <a class="link link-hover">House Insurance</a>
+          </div> 
+          
+          <div>
+            <span class="footer-title">Help</span> 
+            <a class="link link-hover">FAQs</a> 
+            <a class="link link-hover">Contact Us</a> 
+            
+          </div> 
+          <div>
+            <span class="footer-title">Subscribe to Our Newsletter</span> 
+            <div class="form-control w-80">
+              <label class="label">
+                <span class="label-text">email address</span>
+              </label> 
+              <div class="relative">
+                <input type="text" placeholder="username@site.com" class="py-4 bg-transparent border-b-2 border-black outline-none" /> 
+                <button class="btn text-white absolute top-0 right-0 rounded-full bg-gradient-to-r from-gradient-start to-gradient-end"><i class="fa-solid fa-chevron-right"></i></button>
+              </div>
+            </div>
+          </div>
+          </div>
+        <div class="mt-10 text-center">
+          <p>© 2027-UIDesign to-All right reserved.</p>
+        </div>
+      </footer>
+    
+        
+     
+    
     
 </body>
 </html>
